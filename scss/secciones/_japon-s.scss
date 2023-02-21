@@ -1,0 +1,373 @@
+@import "../base/extend";
+@import "../base/mixin";
+@import "../base/variables";
+
+/*JAPON*/
+
+.banner-japon{
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(4,9,30,0.555),rgba(4,9,30,0.555)),url(../img/japon-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    h1{
+        color: aliceblue;
+        font-size: 10vh;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    p{
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 35px;
+        font-size: medium;   
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+
+        .boton-header{
+            @extend %botones-comenzar;
+
+            &:hover{
+                box-shadow: 2px 2px 3px whitesmoke;
+                transform: translateY(-10px);
+            }
+
+        }
+
+    }
+
+}
+
+.lugares-visitar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr);
+    justify-items: center;
+
+
+    .tokio{
+        grid-area: buenos-aires;
+        padding: 40px;
+    }
+
+    .card1{
+        grid-area: card1;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+
+        
+    }
+    
+    .card2{
+        grid-area: card2;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card3{
+        grid-area: card3;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card4{
+        grid-area: card4;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+
+    .osaka{
+        grid-area: tierra-del-fuego;
+        padding: 40px;
+    }
+    
+    .card5{
+        grid-area: card5;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card6{
+        grid-area: card6;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card7{
+        grid-area: card7;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card8{
+        grid-area: card8;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .kioto{
+        grid-area: misiones;
+        padding: 40px;
+    }
+    
+    .card9{
+        grid-area: card9;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card10{
+        grid-area: card10;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card11{
+        grid-area: card11;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+    
+    .card12{
+        grid-area: card12;
+        @include tarjetass;
+
+        .content{
+            @include tarjetas-contenidoo;
+            background: $background-card-content;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            h4{
+                color: $color-font-cards;
+                text-align: center;
+            }
+                
+            p{
+                color: $color-font-cards;
+                text-align: center;
+            }
+            
+        }
+    }
+
+}

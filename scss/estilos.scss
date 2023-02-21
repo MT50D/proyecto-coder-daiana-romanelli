@@ -1,0 +1,19 @@
+// RESET
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 0px;
+}
+
+
+// IMPORT
+@import "secciones/index-s";
+@import "secciones/argentina-s";
+@import "secciones/japon-s";
+@import "secciones/inglaterra-s.scss";
+@import "secciones/form-s";
+@import "secciones/mq-s";

@@ -1,0 +1,1427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 0px; }
+
+.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: #006bf7;
+  position: relative;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+
+/*INDEX*/
+.contenedor-grid {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-areas: "header" "banner-titulo" "contenedor-sobre-nosotros" "main" "footer"; }
+  .contenedor-grid header {
+    grid-area: header;
+    width: 100%; }
+  .contenedor-grid .banner-titulo {
+    grid-area: banner-titulo;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/planta.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+    .contenedor-grid .banner-titulo h1 {
+      color: aliceblue;
+      font-size: 15vh;
+      text-align: center;
+      padding-top: 100px; }
+    .contenedor-grid .banner-titulo p {
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      margin: 15px 0 35px;
+      font-size: medium; }
+    .contenedor-grid .banner-titulo nav {
+      display: flex;
+      justify-content: center; }
+      .contenedor-grid .banner-titulo nav .boton-header:hover {
+        box-shadow: 2px 2px 3px whitesmoke;
+        transform: translateY(-10px); }
+  .contenedor-grid .contenedor-sobre-nosotros {
+    grid-area: contenedor-sobre-nosotros;
+    text-align: center;
+    padding: 5%;
+    padding-top: 10%; }
+    .contenedor-grid .contenedor-sobre-nosotros h2 {
+      font-size: 8vh; }
+    .contenedor-grid .contenedor-sobre-nosotros p {
+      color: black; }
+  .contenedor-grid main {
+    grid-area: main; }
+    .contenedor-grid main .titulo-visita {
+      text-align: center;
+      font-size: 8vh; }
+    .contenedor-grid main .contenedor-lugares {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 24px; }
+      .contenedor-grid main .contenedor-lugares .nombre-lugar {
+        width: 55vh;
+        height: 150px;
+        border: 4px solid #a29aab;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 150px;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s; }
+        .contenedor-grid main .contenedor-lugares .nombre-lugar:hover {
+          transform: translateY(-10px); }
+        .contenedor-grid main .contenedor-lugares .nombre-lugar nav a {
+          font-size: 35px;
+          display: inline-block;
+          text-decoration: none;
+          color: white; }
+      .contenedor-grid main .contenedor-lugares .lugar1 {
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/puente-de-la-mujer.jpg); }
+      .contenedor-grid main .contenedor-lugares .lugar2 {
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/japon-banner.jpg); }
+      .contenedor-grid main .contenedor-lugares .lugar3 {
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/inglaterra-banner.jpg); }
+  .contenedor-grid footer {
+    grid-area: footer;
+    min-height: 30vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/planta.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px; }
+    .contenedor-grid footer .contenido-footer {
+      color: aliceblue;
+      display: flex;
+      flex-flow: column wrap; }
+      .contenedor-grid footer .contenido-footer ul li {
+        list-style: none;
+        display: flex;
+        justify-content: center; }
+    .contenedor-grid footer .abajo-footer p {
+      color: aliceblue;
+      display: flex;
+      flex-flow: column wrap; }
+    .contenedor-grid footer .boton-volver-arriba {
+      display: inline-block;
+      text-decoration: none;
+      color: aliceblue;
+      border: 1px solid aliceblue;
+      padding: 5px 15px;
+      font-size: 13px;
+      background-color: #16253a;
+      position: relative;
+      cursor: pointer;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s; }
+      .contenedor-grid footer .boton-volver-arriba:hover {
+        transform: translateY(-10px); }
+      .contenedor-grid footer .boton-volver-arriba a {
+        color: aliceblue;
+        text-decoration: none; }
+
+.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: #006bf7;
+  position: relative;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+
+/*ARGENTINA*/
+.banner-argentina {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/faro-fin-del-mundo.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .banner-argentina h1 {
+    color: aliceblue;
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 100px; }
+  .banner-argentina p {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 35px;
+    font-size: medium; }
+  .banner-argentina nav {
+    display: flex;
+    justify-content: center; }
+    .banner-argentina nav .boton-header:hover {
+      box-shadow: 2px 2px 3px whitesmoke;
+      transform: translateY(-10px); }
+
+.lugares-visitar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr);
+  justify-items: center;
+  grid-template-areas: "buenos-aires buenos-aires" "card1 card2" "card3 card4" "tierra-del-fuego tierra-del-fuego" "card5 card6" "card7 card8" "misiones misiones" "card9 card10" "card11 card12";
+  gap: 20px; }
+  .lugares-visitar .nombre-provincia h2 {
+    text-align: center; }
+  .lugares-visitar .nombre-provincia h3 {
+    text-align: center; }
+  .lugares-visitar .buenos-aires {
+    grid-area: buenos-aires;
+    padding: 40px; }
+  .lugares-visitar .card1 {
+    grid-area: card1;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card1 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card1 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card1 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card1 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card2 {
+    grid-area: card2;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card2 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card2 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card2 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card2 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card3 {
+    grid-area: card3;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card3 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card3 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card3 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card3 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card4 {
+    grid-area: card4;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card4 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card4 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card4 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card4 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .tierra-del-fuego {
+    grid-area: tierra-del-fuego;
+    padding: 40px; }
+  .lugares-visitar .card5 {
+    grid-area: card5;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card5 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card5 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card5 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card5 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card6 {
+    grid-area: card6;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card6 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card6 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card6 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card6 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card7 {
+    grid-area: card7;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card7 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card7 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card7 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card7 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card8 {
+    grid-area: card8;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card8 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card8 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card8 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card8 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .misiones {
+    grid-area: misiones;
+    padding: 40px; }
+  .lugares-visitar .card9 {
+    grid-area: card9;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card9 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card9 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card9 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card9 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card10 {
+    grid-area: card10;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card10 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card10 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card10 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card10 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card11 {
+    grid-area: card11;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card11 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card11 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card11 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card11 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card12 {
+    grid-area: card12;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card12 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card12 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card12 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card12 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+
+.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: #006bf7;
+  position: relative;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+
+/*JAPON*/
+.banner-japon {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/japon-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .banner-japon h1 {
+    color: aliceblue;
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 100px; }
+  .banner-japon p {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 35px;
+    font-size: medium; }
+  .banner-japon nav {
+    display: flex;
+    justify-content: center; }
+    .banner-japon nav .boton-header:hover {
+      box-shadow: 2px 2px 3px whitesmoke;
+      transform: translateY(-10px); }
+
+.lugares-visitar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr);
+  justify-items: center; }
+  .lugares-visitar .tokio {
+    grid-area: buenos-aires;
+    padding: 40px; }
+  .lugares-visitar .card1 {
+    grid-area: card1;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card1 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card1 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card1 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card1 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card2 {
+    grid-area: card2;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card2 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card2 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card2 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card2 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card3 {
+    grid-area: card3;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card3 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card3 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card3 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card3 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card4 {
+    grid-area: card4;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card4 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card4 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card4 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card4 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .osaka {
+    grid-area: tierra-del-fuego;
+    padding: 40px; }
+  .lugares-visitar .card5 {
+    grid-area: card5;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card5 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card5 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card5 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card5 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card6 {
+    grid-area: card6;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card6 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card6 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card6 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card6 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card7 {
+    grid-area: card7;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card7 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card7 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card7 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card7 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card8 {
+    grid-area: card8;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card8 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card8 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card8 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card8 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .kioto {
+    grid-area: misiones;
+    padding: 40px; }
+  .lugares-visitar .card9 {
+    grid-area: card9;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card9 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card9 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card9 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card9 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card10 {
+    grid-area: card10;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card10 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card10 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card10 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card10 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card11 {
+    grid-area: card11;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card11 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card11 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card11 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card11 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card12 {
+    grid-area: card12;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card12 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card12 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card12 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card12 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+
+.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: #006bf7;
+  position: relative;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+
+/*INGLATERRA*/
+.banner-inglaterra {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/inglaterra-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .banner-inglaterra h1 {
+    color: aliceblue;
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 100px; }
+  .banner-inglaterra p {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 35px;
+    font-size: medium; }
+  .banner-inglaterra nav {
+    display: flex;
+    justify-content: center; }
+    .banner-inglaterra nav .boton-header:hover {
+      box-shadow: 2px 2px 3px whitesmoke;
+      transform: translateY(-10px); }
+
+.lugares-visitar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr) 0.5 repeat(2, 1fr);
+  justify-items: center; }
+  .lugares-visitar .londres {
+    grid-area: buenos-aires;
+    padding: 40px; }
+  .lugares-visitar .card1 {
+    grid-area: card1;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card1 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card1 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card1 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card1 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card2 {
+    grid-area: card2;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card2 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card2 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card2 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card2 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card3 {
+    grid-area: card3;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card3 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card3 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card3 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card3 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card4 {
+    grid-area: card4;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card4 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card4 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card4 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card4 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .manchester {
+    grid-area: tierra-del-fuego;
+    padding: 40px; }
+  .lugares-visitar .card5 {
+    grid-area: card5;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card5 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card5 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card5 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card5 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card6 {
+    grid-area: card6;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card6 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card6 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card6 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card6 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card7 {
+    grid-area: card7;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card7 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card7 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card7 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card7 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card8 {
+    grid-area: card8;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card8 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card8 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card8 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card8 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .liverpool {
+    grid-area: misiones;
+    padding: 40px; }
+  .lugares-visitar .card9 {
+    grid-area: card9;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card9 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card9 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card9 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card9 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card10 {
+    grid-area: card10;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card10 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card10 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card10 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card10 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card11 {
+    grid-area: card11;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card11 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card11 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card11 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card11 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+  .lugares-visitar .card12 {
+    grid-area: card12;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+    .lugares-visitar .card12 .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: .5s;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4); }
+      .lugares-visitar .card12 .content:hover {
+        opacity: 1; }
+      .lugares-visitar .card12 .content h4 {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+      .lugares-visitar .card12 .content p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center; }
+
+main {
+  padding-bottom: 207px; }
+  main .contact-title {
+    text-align: left;
+    font-size: 25px; }
+  main .form-titulos {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 13px; }
+    main .form-titulos input {
+      width: 100%; }
+    main .form-titulos textarea {
+      width: 100%; }
+
+footer {
+  grid-area: footer;
+  min-height: 30vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/planta.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px; }
+  footer .contenido-footer {
+    color: aliceblue;
+    display: flex;
+    flex-flow: column wrap; }
+    footer .contenido-footer ul li {
+      list-style: none;
+      display: flex;
+      justify-content: center; }
+  footer .abajo-footer p {
+    color: aliceblue;
+    display: flex;
+    flex-flow: column wrap; }
+  footer .boton-volver-arriba {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 5px 15px;
+    font-size: 13px;
+    background-color: #16253a;
+    position: relative;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; }
+    footer .boton-volver-arriba:hover {
+      transform: translateY(-10px); }
+    footer .boton-volver-arriba a {
+      color: aliceblue;
+      text-decoration: none; }
+
+/*laptop landscape*/
+@media screen and (min-width: 1024px) {
+  .lugares-visitar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+    justify-items: center;
+    grid-template-areas: "buenos-aires buenos-aires buenos-aires buenos-aires" "card1 card2 card3 card4" "tierra-del-fuego tierra-del-fuego tierra-del-fuego tierra-del-fuego" "card5 card6 card7 card8" "misiones misiones misiones misiones" "card9 card10 card11 card12";
+    gap: 10px; }
+    .lugares-visitar .card {
+      margin: 10px;
+      width: 230px;
+      height: 300px;
+      border-radius: 10px;
+      background: var(--i);
+      background-size: cover;
+      box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); } }
+
+/*fin laptop landscape*/
+/* Cell landscape */
+@media screen and (max-width: 736px) {
+  .banner-titulo {
+    grid-area: banner-titulo;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)), url(../img/world-big.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; } }
+
+/* Fin cell landscape */

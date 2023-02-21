@@ -1,0 +1,204 @@
+@import "../base/extend";
+
+/*INDEX*/
+.contenedor-grid{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+
+    grid-template-areas: 
+        "header"
+        "banner-titulo"
+        "contenedor-sobre-nosotros"
+        "main"
+        "footer";
+
+        header{
+            grid-area: header;
+            width: 100%;
+        }
+
+        .banner-titulo{
+            grid-area: banner-titulo;
+            min-height: 100vh;
+            width: 100%;
+            justify-content: space-between;
+            background-image: linear-gradient(rgba(4,9,30,0.555),rgba(4,9,30,0.555)),url(../img/planta.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            h1{
+                color: aliceblue;
+                font-size: 15vh;
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            p{
+                color: aliceblue;
+                display: flex;
+                justify-content: center;
+                margin: 15px 0 35px;
+                font-size: medium;   
+            }
+            
+            nav{
+                display: flex;
+                justify-content: center;
+                
+                .boton-header{
+                    @extend %botones-comenzar;
+                    
+                    &:hover{
+                        box-shadow: 2px 2px 3px whitesmoke;
+                        transform: translateY(-10px);
+                    }
+
+                }
+
+            } 
+
+        }
+
+        .contenedor-sobre-nosotros{
+            grid-area: contenedor-sobre-nosotros;
+            text-align: center;
+            padding: 5%;
+            padding-top: 10%;
+            
+            h2{
+            font-size: 8vh;
+            }
+            
+            p{
+            color: black;
+            }
+
+        }
+
+        main{
+            grid-area: main;
+
+            .titulo-visita{
+                text-align: center;
+                font-size: 8vh;
+            }
+
+            .contenedor-lugares{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 24px;
+                margin-bottom: 24px;
+
+                .nombre-lugar{  
+                    width: 55vh;
+                    height: 150px;
+                    border: 4px solid rgb(162, 154, 171);
+                    border-radius: 10px;
+                    text-align: center;
+                    line-height: 150px;
+                
+                    transition-property: transform;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease;
+                    transition-delay: 0s;
+
+                    &:hover{
+                        transform: translateY(-10px);
+                    }
+
+                    nav a{
+                        font-size: 35px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                    }
+
+                } 
+                
+                .lugar1{
+                        background-position: center;
+                        background-size: cover;
+                        background-image: linear-gradient(rgba(4,9,30,0.555),rgba(4,9,30,0.555)), url(../img/puente-de-la-mujer.jpg)
+                }
+
+                .lugar2{
+                        background-position: center;
+                        background-size: cover;
+                        background-image: linear-gradient(rgba(4,9,30,0.555),rgba(4,9,30,0.555)), url(../img/japon-banner.jpg);
+                }
+
+                .lugar3{
+                        background-position: center;
+                        background-size: cover;
+                        background-image: linear-gradient(rgba(4,9,30,0.555),rgba(4,9,30,0.555)), url(../img/inglaterra-banner.jpg);
+                }
+            }
+
+        }
+
+        footer{
+            grid-area: footer;
+            min-height: 30vh;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            background-image: linear-gradient(rgba(4,9,30,0.555),rgba(4,9,30,0.555)),url(../img/planta.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+
+            .contenido-footer{
+                color: aliceblue;
+                display: flex;
+                flex-flow: column wrap;
+                
+                ul li{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                }
+
+            }
+
+            .abajo-footer p{
+                color: aliceblue;
+                display: flex;
+                flex-flow: column wrap;
+                
+            }
+
+            .boton-volver-arriba{
+                display: inline-block;
+                text-decoration: none;
+                color: aliceblue;
+                border: 1px solid aliceblue;
+                padding: 5px 15px;
+                font-size: 13px;
+                background-color: rgb(22, 37, 58);
+                position: relative;
+                cursor: pointer;
+            
+                transition-property: transform;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+
+                &:hover{
+                    transform: translateY(-10px);
+                }
+
+                a{
+                    color: aliceblue;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+}

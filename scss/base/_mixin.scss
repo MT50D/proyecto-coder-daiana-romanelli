@@ -1,0 +1,23 @@
+@import "./variables";
+
+@mixin tarjetass{
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    background: $background-cards;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+
+@mixin tarjetas-contenidoo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 10px;
+}
