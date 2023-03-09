@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 0px; }
 
-.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+.contenedor-grid .banner-titulo .boton-bajar .boton-header, .banner-argentina .boton-bajar .boton-header, .banner-japon .boton-bajar .boton-header, .banner-inglaterra .boton-bajar .boton-header {
   display: inline-block;
   text-decoration: none;
   color: aliceblue;
@@ -25,7 +25,7 @@ html {
 /*INDEX*/
 .contenedor-grid {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -54,10 +54,10 @@ html {
       justify-content: center;
       margin: 15px 0 35px;
       font-size: medium; }
-    .contenedor-grid .banner-titulo nav {
+    .contenedor-grid .banner-titulo .boton-bajar {
       display: flex;
       justify-content: center; }
-      .contenedor-grid .banner-titulo nav .boton-header:hover {
+      .contenedor-grid .banner-titulo .boton-bajar .boton-header:hover {
         box-shadow: 2px 2px 3px whitesmoke;
         transform: translateY(-10px); }
   .contenedor-grid .contenedor-sobre-nosotros {
@@ -152,7 +152,7 @@ html {
         color: aliceblue;
         text-decoration: none; }
 
-.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+.contenedor-grid .banner-titulo .boton-bajar .boton-header, .banner-argentina .boton-bajar .boton-header, .banner-japon .boton-bajar .boton-header, .banner-inglaterra .boton-bajar .boton-header {
   display: inline-block;
   text-decoration: none;
   color: aliceblue;
@@ -187,10 +187,10 @@ html {
     justify-content: center;
     margin: 15px 0 35px;
     font-size: medium; }
-  .banner-argentina nav {
+  .banner-argentina .boton-bajar {
     display: flex;
     justify-content: center; }
-    .banner-argentina nav .boton-header:hover {
+    .banner-argentina .boton-bajar .boton-header:hover {
       box-shadow: 2px 2px 3px whitesmoke;
       transform: translateY(-10px); }
 
@@ -551,7 +551,7 @@ html {
         color: rgba(255, 255, 255, 0.8);
         text-align: center; }
 
-.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+.contenedor-grid .banner-titulo .boton-bajar .boton-header, .banner-argentina .boton-bajar .boton-header, .banner-japon .boton-bajar .boton-header, .banner-inglaterra .boton-bajar .boton-header {
   display: inline-block;
   text-decoration: none;
   color: aliceblue;
@@ -586,10 +586,10 @@ html {
     justify-content: center;
     margin: 15px 0 35px;
     font-size: medium; }
-  .banner-japon nav {
+  .banner-japon .boton-bajar {
     display: flex;
     justify-content: center; }
-    .banner-japon nav .boton-header:hover {
+    .banner-japon .boton-bajar .boton-header:hover {
       box-shadow: 2px 2px 3px whitesmoke;
       transform: translateY(-10px); }
 
@@ -944,7 +944,7 @@ html {
         color: rgba(255, 255, 255, 0.8);
         text-align: center; }
 
-.contenedor-grid .banner-titulo nav .boton-header, .banner-argentina nav .boton-header, .banner-japon nav .boton-header, .banner-inglaterra nav .boton-header {
+.contenedor-grid .banner-titulo .boton-bajar .boton-header, .banner-argentina .boton-bajar .boton-header, .banner-japon .boton-bajar .boton-header, .banner-inglaterra .boton-bajar .boton-header {
   display: inline-block;
   text-decoration: none;
   color: aliceblue;
@@ -979,10 +979,10 @@ html {
     justify-content: center;
     margin: 15px 0 35px;
     font-size: medium; }
-  .banner-inglaterra nav {
+  .banner-inglaterra .boton-bajar {
     display: flex;
     justify-content: center; }
-    .banner-inglaterra nav .boton-header:hover {
+    .banner-inglaterra .boton-bajar .boton-header:hover {
       box-shadow: 2px 2px 3px whitesmoke;
       transform: translateY(-10px); }
 
